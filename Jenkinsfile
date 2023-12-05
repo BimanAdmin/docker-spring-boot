@@ -14,7 +14,7 @@ pipeline {
         stage ("Build JAR") {
             steps {
                 sh "sudo apt-get install maven -y"
-                sh "mvn clean install"
+                //sh "mvn clean install"
             }
         }
         
