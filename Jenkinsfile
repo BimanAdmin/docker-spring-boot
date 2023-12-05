@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     sh 'sudo usermod -aG docker jenkins'
-                    sh 'sudo service jenkins restart'
+                    //sh 'sudo service jenkins restart'
                     dockerImage = docker.build registry
                     dockerImage.tag("$BUILD_NUMBER")
                 }
